@@ -1,0 +1,144 @@
+ /* ABOUT.HTML  */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMove 1s forwards;
+  }
+  
+  @keyframes fadeInMove {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .avatar-shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .avatar-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  .btn-primary {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Collections.html */
+
+  /* Make the page load smoothly */
+body.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Navbar link hover effect */
+  .nav-link:hover {
+    color: #0dcaf0 !important; /* Light blue hover */
+  }
+  
+  /* Hero Section - make it slightly animated */
+  header h1, header p {
+    animation: fadeSlideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Carousel images styling */
+  .carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  /* Hover zoom and shadow for carousel images */
+  .carousel-inner img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Footer text smaller on mobiles */
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Carousel indicators style (optional) */
+  .carousel-indicators button {
+    background-color: #0dcaf0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Make carousel control buttons slightly transparent */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  /* Make the whole page a little softer */
+  .container, .navbar, header, footer {
+    transition: all 0.4s ease;
+  }
+
+  
+  /* Galley.html */
+.gallery-img {
+    height: 200px; /* Adjust this value based on your preference */
+    object-fit: cover; /* Ensures that the image will cover the box without distorting the aspect ratio */
+    width: 100%; /* Makes sure the image is responsive */
+}
+/* Fade in all effect */
+/* Global Fade-in Effect for all pages */
+body {
+    opacity: 0;
+    animation: fadeInEffect 1.5s ease-in-out forwards;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Optional: Add fade-in class to other elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 2s ease-in-out forwards;
+}
+
+/* Links hover effect */
+a:hover, .btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Add more customization based on your needs */
